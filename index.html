@@ -1,0 +1,266 @@
+<html>
+
+	<head>
+
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+				<link rel="stylesheet" href="themes/blue.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<!-- Include the jQuery library -->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<!-- Include the jQuery Mobile library -->
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script src="cordova.js"></script>
+	</head>
+	
+	<body>
+		<script>
+		$(document).on("pagecreate","#gallerypage",function(){
+			  $("img").on("tap",function(){
+				$("#images").hide();
+				$("#imageview").show();
+				$("#imageshow").prop("src", $(this).prop("src"));
+			  });   
+				$("#back").on("tap", function() {
+					$("#imageview").hide();
+					$("#images").show();
+				});
+			});
+		
+		</script>
+		<style>
+			.center {
+				text-align: center;
+			}
+			.fl-photo-img {
+				max-width: 100%;
+				max-height: 100%;
+				width: 250px;
+				height: 250px;
+				margin-bottom: 15px;
+			}
+			#imageshow {
+				max-width: 100%;
+				max-height: 100%;
+				width: 300px;
+				height: 300px;	
+			}
+			.size1 {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			#imageview{
+				margin-bottom: 300px;
+			}
+		</style>
+	
+	
+		<!--- home page --->
+		<div data-role="page" id="homepage">
+			<div data-role="header" class="ui-bar-blue">
+				<h1>Gym Space For Rent San Diego</h1>
+			</div>
+			
+			<div data-role="main">
+				<h3 class="center">Best place to rent out a gym in all of San Diego.</h3>
+				<h4 class="center"><i>We have been in business for over 18 years.</i></h4>
+				<h4 class="center"> Trainer Rent Options</h4>
+				<div data-role="collapsible">
+					<h5>Option #1</h5>
+					<p>$1000 rent per month. Use the facility as your own business.
+					$500 off your 1st month with 1 year agreement.</p>
+				</div>
+				<br>
+				<div data-role="collapsible">
+					<h5>Option #2</h5>
+					<p>Partial rent trade. $500 rent per month and train our clients 5 hours per week.</p>
+				</div>
+				<br>
+				<div data-role="collapsible">
+					<h5>Option #3</h5>
+					<p>Supplement your income training our clients. You're still your own boss.</p>
+				</div>
+
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#homepage" data-icon="home">Home </a></li>
+						<li><a href="#facilitypage" data-icon="grid">Facility </a></li>
+						<li><a href="#gallerypage" data-icon="camera">Gallery </a></li>
+						<li><a href="#contactpage" data-icon="phone">Contact </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--- end of  home page  --->
+		
+			<!--- facility page  --->
+		<div data-role="page" id="facilitypage">
+			<div data-role="header">
+				<h1>The Facility</h1>
+			</div>
+			
+			<div data-role="main">
+					<h2 class="center">Features Of The Facility</h2>
+					<ul data-role="listview" data-inset="true">
+						<li>Consult Area</li>
+						<li>24/7 access</li>
+						<li>Kitchen area</li>
+						<li>2 bathrooms with showers</li>
+						<li>AC and heat</li>
+						<li>Private office for trainers</li>
+						<li>Wifi internet</li>
+						<li>Free copy and printing</li>
+						<li>Outside area and separate equipment for Bootcamp></li>
+						<li>Massage room and therapist</li>
+						<li>Private office if needed</li>
+						<li data-role="list-divider">Our equipment amenities</li>
+						<li>Cardio equipment</li>
+						<li>Cable machines</li>
+						<li>Strength equipment</li>
+						<li>Functional equipment</li>
+						<li>Monkey bars</li>
+						<li>Climbing wall</li>
+						<li>Battle ropes</li>
+						<li>Climbing ropes</li>
+						<li>Pegboard</li>
+						<li>Bumper plates</li>
+						<li>Sleds</li>
+						<li>Tires</li>
+						<li>Plyo boxes</li>
+						<li>Medicine balls</li>
+						<li>Cardio steps</li>
+						<li>Kettle bells</li>
+						<li>Dumbbells</li>
+						<li>Super bands</li>
+						<li>Resistance bands</li>
+						<li>Spin bikes</li>
+						<li>Bosu balls</li>
+						<li>Swiss balls</li>
+						<li>Multi station machine</li>
+						<li>Benches</li>
+						<li>Dual cross and single cable machines</li>
+						<li>Boxing gloves, bags, and mitts</li>
+						<li>And more!</li>
+					</ul>
+	
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#homepage" data-icon="home">Home </a></li>
+						<li><a href="#facilitypage" data-icon="grid">Facility </a></li>
+						<li><a href="#gallerypage" data-icon="camera">Gallery </a></li>
+						<li><a href="#contactpage" data-icon="phone">Contact </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+				<!--- end of  facility page  --->
+				
+				<!--- gallery page --->
+		<div data-role="page" id="gallerypage">
+			<div data-role="header">
+				<h1>Gallery</h1>
+			</div>
+			
+			<div data-role="main">
+				<p class="center" id="images">
+				<IMG class="fl-photo-img wp-image-304" alt=IMG_0496[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04961-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-323" alt=IMG_0515[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05151-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-322" alt=IMG_0514[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05141-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-321" alt=IMG_0513[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05131-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-320" alt=IMG_0512[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05121-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-319" alt=IMG_0511[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05111-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-318" alt=IMG_0510_1[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_0510_11-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-311" alt=IMG_0503[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05031-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-313" alt=IMG_0505[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05051-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-314" alt=IMG_0506[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05061-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-312" alt=IMG_0504[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05041-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-315" alt=IMG_0507[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05071-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-316" alt=IMG_0508[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05081-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-317" alt=IMG_0509[2] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05092-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-310" alt=IMG_0502[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05021-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-309" alt=IMG_0500[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05001-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-306" alt=IMG_0498[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04981-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-305" alt=IMG_0497[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04971-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-307" alt=IMG_0501[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_05011-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-303" alt=IMG_0495[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04951-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-299" alt=IMG_0490[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04901-120x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-300" alt=IMG_0492[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04921-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-301" alt=IMG_0493[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04931-150x150.jpg" itemprop="image">
+				<IMG class="fl-photo-img wp-image-302" alt=IMG_0494[1] src="http://www.gymspaceforrentsandiego.com/wp-content/uploads/2017/01/IMG_04941-150x150.jpg" itemprop="image">
+				</p>
+				
+				<div id="imageview">
+					<button  id="back" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-icon-notext"></button>
+					<p class="center">
+						<img id="imageshow" src="">
+					</p>
+				</div>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#homepage" data-icon="home">Home </a></li>
+						<li><a href="#facilitypage" data-icon="grid">Facility </a></li>
+						<li><a href="#gallerypage" data-icon="camera">Gallery </a></li>
+						<li><a href="#contactpage" data-icon="phone">Contact </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+				<!--- end of  gallery page  --->
+				
+				
+				<!--- contact page --->
+		<div data-role="page" id="contactpage">
+			<div data-role="header">
+				<h1>Contact</h1>
+			</div>
+			
+			<div data-role="main">
+			
+			<h3 class="center">Phone</h3>
+			<a href="tel:619-726-0006"  class="ui-btn ui-icon-phone ui-btn-icon-left">(619) 726-0006</a>
+			<h3 class="center">Email</h3>
+			<a href="mailto:info@shapeupstudio.com"  class="ui-btn ui-icon-mail ui-btn-icon-left">info@shapeupstudio.com</a>
+			<h3 class="center">Address</h3>
+			<h4 class="center">7955 Dunbrook Road Suite D San Diego, CA 92126</h4>
+			<div class="center">
+				<iframe class="size1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.5782797575825!2d-117.15185508485713!3d32.89292448537357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf8c8278a8867%3A0x31e7eb94cfaaf2f!2s7955+Dunbrook+Rd+d%2C+San+Diego%2C+CA+92126!5e1!3m2!1sen!2sus!4v1491857709591" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#homepage" data-icon="home">Home </a></li>
+						<li><a href="#facilitypage" data-icon="grid">Facility </a></li>
+						<li><a href="#gallerypage" data-icon="camera">Gallery </a></li>
+						<li><a href="#contactpage" data-icon="phone">Contact </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+				<!--- end of  contact page  --->
+	
+	</body>
+	
+</html>
