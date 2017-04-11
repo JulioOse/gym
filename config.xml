@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
@@ -6,10 +5,10 @@
         versionCode = "1"
         version     = "1.0.0" >
 
-    <name>gym space for rent san diego</name>
+    <name>Jco web development</name>
 
     <description>
-        Best place to rent out a gym in all of San Diego.
+        we can create an awesome web site or web app for your business
     </description>
 
     <author href="http://jcowebdevelopment.com" email="julio@jcowebdevelopment.com">
